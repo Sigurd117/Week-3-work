@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Ariel, sans-serif, Serif;
+            margin: 0;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+        .Oozaru {
+            position: relative;
+            overflow: auto;
+        }
+
+        .image-container:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .image-container:hover figcaption {
+            opacity: 1;
+        }
+    </style>
+    <title>Responsive Image</title>
+</head>
+<body>
+<h1>Manga Image Gallery</h1>
+
+<div class="gallery">
+    <div class="image-container">
+        <img src="./images/atem.jpg" alt="Image 1">
+        <figcaption>Pharaoh Atem</figcaption>
+    </div>
+    <div class="image-container">
+        <img src="./images/cell%20games.jpg" alt="Image 2">
+        <figcaption>Cell Games</figcaption>
+    </div>
+    <!-- Add more image containers as needed -->
+    <div class="image-container">
+        <img src="./images/naruto.webp" alt="Image 2">
+        <figcaption>Nine-tailed Fox</figcaption>
+    </div>
+    <div class="image-container">
+        <img src="./images/marik.png" alt="Image 2">
+        <figcaption>Yami-Marik</figcaption>
+    </div>
+    <div class="image-container">
+        <img src="./images/kaiba.webp" alt="Image 2">
+        <figcaption>Battle City</figcaption>
+    </div>
+    <div class="image-container">
+        <img src="./images/fullmetal.webp" alt="Image 2">
+        <figcaption>Full-Metal Alchemist</figcaption>
+    </div>
+    <div class="Oozaru">
+        <img src="./images/oozaru.jpg" alt="Image 2">
+        <figcaption>Oozaru</figcaption>
+    </div>
+    <div class="image-container">
+        <img src="./images/ultra%20Instinct.jpg" alt="Image 2">
+        <figcaption>Ultra-</figcaption>
+    </div>
+    <div class="image-container">
+        <img src="./images/mustang.webp" alt="Image 2">
+        <figcaption>Mustang</figcaption>
+    </div>
+    <div class="image-container">
+        <img src="./images/sage%20mode.jpg" alt="Image 2">
+        <figcaption>Sage mode</figcaption>
+    </div>
+
+</div>
+
+</body>
+</html>
